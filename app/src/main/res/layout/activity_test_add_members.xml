@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestAddMembers">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="0dp"
+        app:cardCornerRadius="10dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:id="@+id/back1"
+                    android:layout_marginTop="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="155dp"
+                    android:src="@drawable/ic_arrow_back_black_24dp"/>
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="10dp"
+
+                    android:tint="@color/white"
+                    android:background="@drawable/circle"
+                    android:src="@drawable/ic_person_add_black_24dp"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="22sp"
+
+
+                    android:text="@string/add_member"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-medium"/>
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:rotation="45"
+                android:layout_marginTop="-10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/linearLayout"
+                android:src="@drawable/square"/>
+            <RelativeLayout
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="40dp">
+                <ImageView
+                    android:id="@+id/firstimageview"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:padding="8dp"
+                    android:src="@drawable/ic_person_pin_black_24dp"/>
+                <EditText
+                    android:id="@+id/NameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@id/firstimageview"
+                    android:hint="@string/name"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp"
+                    android:layout_alignBottom="@+id/firstimageview"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Name"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="40dp">
+                <ImageView
+                    android:id="@+id/secondImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:padding="8dp"
+                    android:src="@drawable/ic_phone_black_24dp"/>
+                <EditText
+                    android:id="@+id/PhoneText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@id/secondImageView"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp"
+                    android:layout_alignBottom="@id/secondImageView"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Phone"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="40dp">
+                <ImageView
+                    android:id="@+id/thirdImageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:padding="8dp"
+                    android:src="@drawable/ic_mail_outline_black_24dp"/>
+
+                <EditText
+                    android:id="@+id/EmailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/thirdImageView"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toEndOf="@+id/thirdImageView"
+                    android:layout_toRightOf="@+id/thirdImageView"
+                    android:hint="@string/email"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add"
+
+                android:layout_below="@id/Email"
+                android:layout_marginTop="50dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

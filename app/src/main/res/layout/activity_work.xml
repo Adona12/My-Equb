@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/gradient2"
+        android:theme="@style/AppTheme.hi">
+
+
+
+        <ImageView
+            android:id="@+id/remove"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_black_24dp"/>
+
+
+        <TextView
+            android:id="@+id/nameShow"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="93dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="25sp"
+
+            android:text="Name" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/callMe"
+                android:layout_width="42dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/phone"
+                app:layout_constraintEnd_toStartOf="@+id/phone"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/phone"
+                android:src="@drawable/ic_phone_black_24dp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="174dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="100dp"
+
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="260dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/phone_number"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/messageMe"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/messageMe"
+                android:layout_width="42dp"
+
+                android:layout_height="36dp"
+                android:layout_marginEnd="64dp"
+                android:layout_marginRight="64dp"
+                app:layout_constraintBottom_toBottomOf="@+id/phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/phone"
+                android:src="@drawable/ic_message_black_24dp" />
+
+            <ImageView
+                android:id="@+id/emailMe"
+                android:layout_width="42dp"
+
+                android:layout_height="36dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/callMe"
+                app:layout_constraintStart_toStartOf="@+id/callMe"
+                app:layout_constraintTop_toBottomOf="@+id/callMe"
+               android:src="@drawable/ic_mail_outline_black_24dp" />
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="320dp"
+                android:layout_height="3dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="42dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/line"
+                app:layout_constraintCircleRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="174dp"
+                android:layout_height="54dp"
+
+                android:text="@string/email"
+                app:layout_constraintBottom_toBottomOf="@+id/emailMe"
+                app:layout_constraintEnd_toEndOf="@+id/phone"
+                app:layout_constraintStart_toStartOf="@+id/phone"
+                app:layout_constraintTop_toTopOf="@+id/emailMe"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Status">
+
+  <android.support.v7.widget.CardView
+      android:id="@+id/cardView"
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+
+
+      >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+      <TextView
+          android:id="@+id/days"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginStart="8dp"
+          android:layout_marginLeft="8dp"
+          android:layout_marginTop="4dp"
+          android:layout_marginEnd="8dp"
+          android:layout_marginRight="8dp"
+          android:layout_marginBottom="8dp"
+
+          android:text="13 days left"
+          android:textColor="@color/materialgreen"
+          android:textSize="20sp"
+          app:layout_constraintBottom_toTopOf="@+id/listener"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0" />
+
+
+      <LinearLayout
+          android:id="@+id/linearLayout4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="52dp"
+          android:layout_marginLeft="52dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginBottom="8dp"
+          android:orientation="vertical"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/listener">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:text="@string/total"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="134567Birr"
+            android:textColor="@color/pinkaccent"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="171dp"
+            tools:layout_editor_absoluteY="103dp" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/linearLayout3"
+          android:layout_width="75dp"
+
+          android:layout_height="wrap_content"
+          android:layout_marginStart="8dp"
+          android:layout_marginLeft="8dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginEnd="8dp"
+          android:layout_marginRight="8dp"
+          android:layout_marginBottom="8dp"
+          android:orientation="vertical"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.801"
+          app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+          app:layout_constraintTop_toBottomOf="@+id/listener">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:text="@string/winnerPick"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:id="@+id/winner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/pinkaccent"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="171dp"
+            tools:layout_editor_absoluteY="103dp" />
+      </LinearLayout>
+
+      <mobi.gspd.segmentedbarview.SegmentedBarView
+          android:id="@+id/listener"
+          android:layout_width="match_parent"
+          android:layout_height="38dp"
+          android:layout_marginStart="8dp"
+          android:layout_marginLeft="8dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginEnd="8dp"
+          android:layout_marginRight="8dp"
+          android:layout_marginBottom="8dp"
+
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.338"
+          app:sbv_empty_segment_text="No segments"
+          app:sbv_segment_gap_width="10dp"
+          app:sbv_segment_text_size="20sp"
+          app:sbv_show_description_text="true"
+          app:sbv_side_style="angle"
+          app:sbv_side_text_style="twoSided"
+          app:sbv_value_sign_height="30dp"
+          app:sbv_value_sign_round="8dp"
+          app:sbv_value_sign_width="30dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+  </android.support.v7.widget.CardView>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/statusRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="609dp" />
+  </ScrollView>
+</LinearLayout>

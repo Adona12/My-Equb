@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">Equb collector</string>
+    <string name="title_activity_settings" translatable="false">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general" translatable="false">General</string>
+
+    <string name="pref_title_social_recommendations" translatable="false">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations" translatable="false">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name" translatable="false">Display name</string>
+    <string name="pref_default_display_name" translatable="false">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages" translatable="false">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync" translatable="false">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency" translatable="false">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings" translatable="false">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications" translatable="false">Notifications</string>
+
+    <string name="pref_title_new_message_notifications" translatable="false">New message notifications</string>
+
+    <string name="pref_title_ringtone" translatable="false">Ringtone</string>
+    <string name="pref_ringtone_silent" translatable="false">Silent</string>
+
+    <string name="pref_title_vibrate" translatable="false">Vibrate</string>
+    <string name="title_activity_members" translatable="false">Members</string>
+    <string name="title_activity_contact" translatable="false">contact</string>
+    <string name="one" translatable="false">1</string>
+    <string name="two" translatable="false">2</string>
+    <string name="three" translatable="false">3</string>
+    <string name="four" translatable="false">4</string>
+    <string name="start">Do you want to start the Equb? </string>
+    <string name="no">No </string>
+    <string name="five" translatable="false">5</string>
+    <string name="six" translatable="false">6</string>
+    <string name="title_activity_basic" translatable="false">Basic</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter">Enter</string>
+    <string name="enter_the_amount_for_equb">Enter the amount for Equb ?</string>
+    <string name="pending">pending</string>
+    <string name="noMember">No member yet</string>
+    <string name="Everbody">Everybody has not paid</string>
+    <string name="this_will_erase_the_entire_equb">This will erase the entire equb</string>
+    <string name="amharic">Amharic</string>
+    <string name="guragagna" translatable="false">Guragagna</string>
+    <string name="reset">Reset</string>
+    <string name="english">English</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="payment">payment</string>
+    <string name="date">Date</string>
+
+    <string name="amount">Amount</string>
+
+
+    <string name="phone_number">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="add">Add</string>
+    <string name="add_member">Add member</string>
+    <string name="total">Total Birr</string>
+    <string name="winner">Winner</string>
+    <string name="check_the_status">Check the Status</string>
+    <string name="status">Status</string>
+    <string name="update">Update</string>
+    <string name="update_member">see member info</string>
+    <string name="draw">Draw</string>
+    <string name="pick_the_winner">Pick the winner</string>
+    <string name="history">History</string>
+    <string name="view_previous_winners">View previous winners</string>
+    <string name="setting">Setting</string>
+    <string name="make_some_changes">Make some changes</string>
+    <string name="spin_roll">Spin Roll</string>
+    <string name="the_winner_is">The winner is:</string>
+    <string name="the_previous_winner_was">The previous winner was:</string>
+    <string name="winnerPick">winner</string>
+    <string name="title_activity_main2" translatable="false">Main2Activity</string>
+    <string name="invalid">You cannot add a person after a cycle has started</string>
+    <string name="yes">Yes</string>
+    <string name="tryagain">try again</string>
+    <string name="elapsed">days elapsed</string>
+    <string name="left">days left</string>
+    <string name="this_will_clase_the_previous_cycle">This will clase the previous cycle</string>
+    <string name="member">Member</string>
+
+</resources>
